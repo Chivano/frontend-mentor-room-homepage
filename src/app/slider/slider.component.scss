@@ -1,0 +1,10 @@
+button {
+    width : 4rem;
+    height : 4rem;
+    background-color: hsl(0, 0%, 0%);
+    border: none;
+    cursor: pointer;
+    &:hover {
+        background-color: hsl(0, 0%, 27%)
+    }
+}
