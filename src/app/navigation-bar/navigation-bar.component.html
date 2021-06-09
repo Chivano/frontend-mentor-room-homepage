@@ -1,9 +1,10 @@
-<div>         
-    <h1>Room</h1>  
-    <nav>
-        <ul class="navbar">
-            <app-navigation-bar-button *ngFor="let menuItem of menu" [title]="menuItem.title">navigation-bar works!</app-navigation-bar-button>       
-        </ul>
-    </nav>
-</div>
-
+<nav class="navbar">
+  <h1 class="header">room</h1>
+  <ul class="list">
+    <app-navigation-bar-button
+      *ngFor="let menuItem of menu"
+      [title]="menuItem.title"
+      >navigation-bar works!</app-navigation-bar-button
+    >
+  </ul>
+</nav>

@@ -1,0 +1,14 @@
+.button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  &:after {
+    content: url(/assets/icon-arrow.svg);
+    padding-left: 1rem;
+  }
+  &:hover {
+    opacity: 0.4;
+  }
+}

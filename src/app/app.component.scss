@@ -1,0 +1,15 @@
+.layout {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas:
+    "header header main"
+    "footer footer footer";
+}
+.main {
+  grid-area: main;
+}
+.header {
+  grid-area: header;
+}

@@ -1,6 +1,25 @@
 .navbar {
-    display : flex;
-    list-style-type: none;
-    cursor: pointer;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin-left: 4rem;
+  margin-top: 4rem;
+  width: 100%;
+}
+.list {
+  display: flex;
+  list-style-type: none;
+  cursor: pointer;
+  color: white;
+  width: 30%;
+  justify-content: space-between;
+}
+.header {
+  color: white;
+  font-family: "Spartan", sans-serif;
+}
+
+:host {
+  width: 100%;
+  height: 10%;
+  display: flex;
 }
