@@ -3,16 +3,20 @@ import { Component, OnInit, Input } from '@angular/core';
 @Component({
   selector: 'app-main-text-area',
   templateUrl: './main-text-area.component.html',
-  styleUrls: ['./main-text-area.component.scss']
+  styleUrls: ['./main-text-area.component.scss'],
 })
 export class MainTextAreaComponent implements OnInit {
+  @Input() text = '';
+  @Input() title = '';
 
-  @Input() text = ""
-  @Input() title = ""
+  mq = window.matchMedia('(min-width : 480px)');
+  displaySlider = this.mq.matches;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
+    this.mq.addEventListener('change', (event) => {
+      this.displaySlider = event.matches;
+    });
   }
 
+  ngOnInit(): void {}
 }

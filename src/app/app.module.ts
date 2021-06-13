@@ -7,7 +7,7 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import { NavigationBarButtonComponent } from './navigation-bar-button/navigation-bar-button.component';
 import { MainTextAreaComponent } from './main-text-area/main-text-area.component';
 import { SubTextAreaComponent } from './sub-text-area/sub-text-area.component';
-import { MainPictureAreaComponent } from './main-picture-area/main-picture-area.component';
+import { PictureAreaComponent } from './picture-area/picture-area.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +17,10 @@ import { MainPictureAreaComponent } from './main-picture-area/main-picture-area.
     NavigationBarButtonComponent,
     MainTextAreaComponent,
     SubTextAreaComponent,
-    MainPictureAreaComponent
+    PictureAreaComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

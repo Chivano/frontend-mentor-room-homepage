@@ -1,8 +1,13 @@
-:host {
-  background: url("/assets/desktop-image-hero-1.jpg");
+.root {
   display: flex;
+  position: relative;
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  > app-slider {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }

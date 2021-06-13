@@ -1,0 +1,4 @@
+<div class="root" [ngStyle]="{ 'background-image': getUrl() }">
+  <app-navigation-bar *ngIf="displayNavigationBar"></app-navigation-bar>
+  <app-slider *ngIf="displaySlider && activeSlider"></app-slider>
+</div>

@@ -5,6 +5,7 @@
       "Segoe UI Symbol";
     font-size: 14px;
     position: absolute;
+
     bottom: 0;
     top: 0;
     color: #333;
@@ -26,12 +27,16 @@
   rel="stylesheet"
 />
 <div class="layout">
-  <app-main-picture-area class="header"></app-main-picture-area>
-  <app-slider></app-slider>
+  <app-picture-area
+    [pictureUrl]="getImageUrl()"
+    [displayNavigationBar]="true"
+    [activeSlider]="true"
+  ></app-picture-area>
   <app-main-text-area
-    class="main"
     [title]="slides[activeSlide].header"
     [text]="slides[activeSlide].content"
   ></app-main-text-area>
+  <app-picture-area pictureUrl="/image-about-dark.jpg"></app-picture-area>
   <app-sub-text-area></app-sub-text-area>
+  <app-picture-area pictureUrl="/image-about-light.jpg"></app-picture-area>
 </div>

@@ -12,3 +12,17 @@
     opacity: 0.4;
   }
 }
+
+.slider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+:host {
+  position: relative;
+}
+
+.textarea {
+  padding: 3rem 2rem 3rem 2rem;
+}
