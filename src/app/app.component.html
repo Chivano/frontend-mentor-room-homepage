@@ -27,16 +27,20 @@
   rel="stylesheet"
 />
 <div class="layout">
-  <app-picture-area
+  <app-header-area
+    class="header"
     [pictureUrl]="getImageUrl()"
     [displayNavigationBar]="true"
     [activeSlider]="true"
-  ></app-picture-area>
+  ></app-header-area>
   <app-main-text-area
     [title]="slides[activeSlide].header"
     [text]="slides[activeSlide].content"
   ></app-main-text-area>
-  <app-picture-area pictureUrl="/image-about-dark.jpg"></app-picture-area>
+  <app-header-area
+    class="about-dark"
+    pictureUrl="/image-about-dark.jpg"
+  ></app-header-area>
   <app-sub-text-area></app-sub-text-area>
-  <app-picture-area pictureUrl="/image-about-light.jpg"></app-picture-area>
+  <app-header-area pictureUrl="/image-about-light.jpg"></app-header-area>
 </div>

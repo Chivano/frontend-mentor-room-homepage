@@ -7,7 +7,9 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import { NavigationBarButtonComponent } from './navigation-bar-button/navigation-bar-button.component';
 import { MainTextAreaComponent } from './main-text-area/main-text-area.component';
 import { SubTextAreaComponent } from './sub-text-area/sub-text-area.component';
-import { PictureAreaComponent } from './picture-area/picture-area.component';
+import { HeaderAreaComponent } from './header-area/header-area.component';
+import { PictureContainerComponent } from './picture-container/picture-container.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -17,9 +19,10 @@ import { PictureAreaComponent } from './picture-area/picture-area.component';
     NavigationBarButtonComponent,
     MainTextAreaComponent,
     SubTextAreaComponent,
-    PictureAreaComponent,
+    HeaderAreaComponent,
+    PictureContainerComponent,
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
 })

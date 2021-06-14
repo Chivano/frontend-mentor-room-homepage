@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PictureAreaComponent } from './picture-area.component';
+import { HeaderAreaComponent } from './header-area.component';
 
-describe('PictureAreaComponent', () => {
-  let component: PictureAreaComponent;
-  let fixture: ComponentFixture<PictureAreaComponent>;
+describe('HeaderAreaComponent', () => {
+  let component: HeaderAreaComponent;
+  let fixture: ComponentFixture<HeaderAreaComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [PictureAreaComponent],
+      declarations: [HeaderAreaComponent],
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PictureAreaComponent);
+    fixture = TestBed.createComponent(HeaderAreaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

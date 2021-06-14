@@ -1,19 +1,18 @@
 .root {
-    position : relative;
-    padding-top : 0.5rem;
-    padding-bottom : 0.5rem;
-    &:hover {
-        &:after {
-            content: "";
-            background: black;
-            position: absolute;
-            bottom: 0;
-            left: 25%;
-            height: 0.1rem;
-            width: 50%;
-            color : hsl(0, 0%, 100%);
-          }
+  position: relative;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-left: 2rem;
+  &:hover {
+    &:after {
+      content: "";
+      background: black;
+      position: absolute;
+      bottom: 0;
+      left: 25%;
+      height: 0.1rem;
+      width: 50%;
+      color: hsl(0, 0%, 100%);
     }
-   
-   
+  }
 }

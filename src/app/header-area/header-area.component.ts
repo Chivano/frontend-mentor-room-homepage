@@ -1,14 +1,22 @@
-import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Input,
+  SimpleChanges,
+  Injectable,
+} from '@angular/core';
 
 @Component({
-  selector: 'app-picture-area',
-  templateUrl: './picture-area.component.html',
-  styleUrls: ['./picture-area.component.scss'],
+  selector: 'app-header-area',
+  templateUrl: './header-area.component.html',
+  styleUrls: ['./header-area.component.scss'],
+  providers: [],
 })
-export class PictureAreaComponent implements OnInit {
+export class HeaderAreaComponent implements OnInit {
   @Input() displayNavigationBar = false;
   @Input() pictureUrl = '';
   @Input() activeSlider = false;
+
   mq = window.matchMedia('(min-width : 480px)');
   displaySlider = !this.mq.matches;
 

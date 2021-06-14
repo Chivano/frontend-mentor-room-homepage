@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
+import { EventserviceService } from './eventservice.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  providers: [EventserviceService],
 })
 export class AppComponent {
   title = 'room-homepage-master';
-
   activeSlide = 0;
   slides = [
     {
@@ -29,10 +30,33 @@ export class AppComponent {
       image: 'image-hero-3.jpg',
     },
   ];
+
+  nextSlide() {
+    if (this.activeSlide + 1 < this.slides.length) {
+      this.activeSlide = this.activeSlide + 1;
+    }
+  }
+
+  previousSlide() {
+    if (this.activeSlide + -1 >= 0) {
+      this.activeSlide = this.activeSlide + -1;
+    }
+  }
+
+  constructor(private eventService: EventserviceService) {
+    this.eventService.nextSlide.subscribe(() => {
+      this.nextSlide();
+    });
+    this.eventService.previousSlide.subscribe(() => {
+      this.previousSlide();
+    });
+  }
+
   getImageUrl() {
-    if (window.matchMedia('min-width : 480px')) {
+    if (window.matchMedia('(min-width : 480px)').matches) {
       return `desktop-${this.slides[this.activeSlide].image}`;
     }
+
     return `mobile-${this.slides[this.activeSlide].image}`;
   }
 }

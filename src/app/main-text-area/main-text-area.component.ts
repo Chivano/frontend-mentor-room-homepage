@@ -9,7 +9,7 @@ export class MainTextAreaComponent implements OnInit {
   @Input() text = '';
   @Input() title = '';
 
-  mq = window.matchMedia('(min-width : 480px)');
+  mq = window.matchMedia('(min-width : 700px)');
   displaySlider = this.mq.matches;
 
   constructor() {
